@@ -1,0 +1,48 @@
+<html>
+<head>
+</head>
+<body link="#CDEFFF" vlink="#DCD8FF" alink="#FFD2CD">
+<table border="0" width="600">
+<form method="post" name="form" action="sendmail2.php" enctype="multipart/form-data">
+<!--<input type=hidden name="mode" value="mailsend">-->
+ <tr>
+  <td width="200" bgcolor="#5584AA"><p align="center">받는사람  Email</td>
+  <td><p><input type="text" name="to" id="to" size="53"></td>
+ </tr>
+ <tr>
+  <td width="200" bgcolor="#5584AA"><p align="center">참조  Email</td>
+  <td><p><input type="text" name="cc" id="cc" size="53"></td>
+ </tr>
+ <tr>
+  <td width="200" bgcolor="#5584AA"><p align="center">숨은참조 Email</td>
+  <td><p><input type="text" name="bcc" id="bcc" size="53"></td>
+ </tr>	
+ <tr>
+  <td width="200" bgcolor="#5584AA"><p align="center">보내는사람 Email</td>
+  <td><p><input type="text" name="from" id="form" size="53"></td>
+ </tr>
+ <tr>
+  <td width="200" bgcolor="#5584AA"><p align="center">제 목</td>
+  <td><p><input type="text" name="subject" id="subject" size="53"></td>
+ </tr>
+ <tr>
+  <td width="200" bgcolor="#5584AA"><p align="center">내 용</td>
+  <td><p><textarea name="body" rows="10" id="body" cols="55"></textarea>
+ </tr>
+ <tr>
+  <td width="200" bgcolor="#5584AA"><p align="center">첨 부</td>
+  <td width="500" bgcolor="#FFFFFF">
+   <input type="file" name="myfile[]" size="200" /><br/>
+   <input type="file" name="myfile[]" size="200" /><br/>
+   <input type="file" name="myfile[]" size="200" /><br/>
+   <input type="file" name="myfile[]" size="200" /><br/>
+  </td>
+ </tr>
+ <tr>
+  <td colspan=2 align=center><br>
+   <input type="submit" name="send" value="편지보내기">
+   <input type="reset" name="cancel" value="내용지우기">
+  </td>
+ </tr>
+</form>
+</table>
